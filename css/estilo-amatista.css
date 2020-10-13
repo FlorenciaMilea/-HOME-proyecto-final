@@ -15,7 +15,7 @@ body {
 }
 
 header{
-  background-color: #EA7AD6;
+  background-color: #FD51BF;
   flex-flow: column;
   color: #FB45B9;
   margin-bottom: 5px;
@@ -25,52 +25,51 @@ header{
 
 }
 .banner {
-  width: 100%;
-  display: inline-flex;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   height: 15vh;
-  align-content: space-between;
   width: 100%;
 }
 
 .logo {
-  height: 50%;
-  width: 10%;
+  height: 100%;
 
 }
 
 .navbar {
   width: 100%;
-  font-weight: 600;
+  font-weight: 900;
   flex-wrap: wrap;
 
 
 }
-.container {
+.container-fluid nav{
   width: 100%;
   align-items: stretch;
   flex-wrap: nowrap;
 }
 .n1{
   display: inline-flex;
-  height: 7vh;
-  width: 8vw;
-  margin: 2%;
+  height: 25px;
+  width: 140px;
+  margin: 15px;
 
 }
 .principal1 {
-  flex-direction: row;
-  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
   width: 100%;
   height: 60vh;
-
-
 
 }
 #inicio {
   padding: 10px;
   width: 45%;
   height: 60%;
-  margin: 20px;
+  margin: 10px;
   display: inline-block;
 
 }
@@ -79,38 +78,43 @@ header{
   padding: 10px;
   width: 45%;
   height: 60%;
-  margin: 20px;
+  margin: 10px;
   display: inline-block;
 }
 
-.imgindex {
+.minigaleria {
+  display: flex;
+  align-content: space-around;
   flex-wrap: wrap;
+  padding-top: 10px;
+  align-content: stretch;
 }
-.imgindex img {
+.minigaleria img {
   height: 200px;
   width: 200px;
   border: 5px solid #BB8FCE;
   object-fit: cover;
-  transition: all 1s;
+  margin: 5px;
+  padding: auto;
+  }
 
-}
 footer {
   display: flex;
+  align-self: flex-end;
   width: 100%;
   background-color: violet;
   position: absolute;
   bottom: 0;
-
   height: 6vh;
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
 main {
   display: inline-block;
 
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
 
 
 #inicio {
@@ -118,14 +122,23 @@ main {
   width: 100%;
   height: auto;
   margin: 20px;
-  display: block;
-  text-align: inherit;
+  display: inline-block;
+
 }
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 768px) {
+
 .n1 {
-  display: inline-block;
+  background-color: pink;
+  height: 15px;
+  width: 160px;
+  margin: 5px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  text-align: center;
+
 }
 
   #aside {
@@ -133,8 +146,8 @@ main {
     width: 100%;
     height: auto;
     margin: 20px;
-    display: block;
-    text-align: inherit;
+    display: inline-block;
+
     }
 
     @media only screen and (max-width: 600px) {
@@ -146,7 +159,7 @@ main {
       text-align: center;
       align-content: flex-end;
       width: 100%;
-      display: block;
+      display: inline-block;
       flex-direction: row;
 
     }
